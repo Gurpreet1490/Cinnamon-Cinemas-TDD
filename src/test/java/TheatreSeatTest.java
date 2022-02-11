@@ -1,4 +1,5 @@
-import org.junit.Test;
+import Model.TheatreSeat;
+import org.junit.jupiter.api.Test;
 
 public class TheatreSeatTest {
 
