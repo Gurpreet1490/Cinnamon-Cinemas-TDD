@@ -1,3 +1,4 @@
+import Model.SeatingPlan;
 import org.junit.Test;
 
 

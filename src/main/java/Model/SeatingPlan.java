@@ -1,6 +1,6 @@
 package Model;
 
 public class SeatingPlan {
-    public SeatingPlan(int i, int i1) {
+    public SeatingPlan(int maxRow, int rowSize) {
     }
 }
