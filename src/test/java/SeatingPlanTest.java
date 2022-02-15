@@ -44,9 +44,17 @@ public class SeatingPlanTest {
 
 
     @Test
-    public void testForBookingManagerClass(){
-        BookingManager bookingManager = new BookingManager();
+    public void testForBookingManagerClass() throws InvalidSeat {
+        BookingManager bookingManager = new BookingManager(3, 5);
+        assertEquals("Successfully booked", bookingManager.bookSeats(3));
     }
+
+    @Test
+    public void testForNoSeatAvialiable() throws InvalidSeat {
+        BookingManager bookingManager = new BookingManager(3, 5);
+        assertEquals("seats not available", bookingManager.bookSeats(16));
+    }
+
 
 
 }
