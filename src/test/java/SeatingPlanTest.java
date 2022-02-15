@@ -17,5 +17,10 @@ public class SeatingPlanTest {
         assertEquals("ABCDEFGHIJKLMNOPQRSTUVW", SeatingPlan.ROW_SEQUENCE_ORDER);
     }
 
+    @Test
+    public void testForBookingManagerClass(){
+        BookingManager bookingManager = new BookingManager(3, 5);
+    }
+
 
 }
